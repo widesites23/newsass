@@ -1,0 +1,58 @@
+
+// generalno podesavanje css stilova za base.scss
+
+$default-font-color: $black; 
+$default-background-color: $light-gray;
+
+$default-font: $rubik;
+$default-font-weight: $font-regular;
+$heading-font: $josefin;
+$heading-font-color: $purple;
+$heading-font-weight: $font-bold;
+
+* {
+    box-sizing: border-box;             //  border box
+    -webkit-box-sizing: border-box;
+    -mozbox-sizing: border-box;
+    -o-box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;                    // velicina za REM (10px)
+    background-color: $default-background-color;
+;
+}
+
+body {
+    font-size: 1.6rem;
+    color: $default-font-color;
+    background-color: $default-background-color;
+    font-family: $default-font;
+    font-weight: $default-font-weight;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: $heading-font;
+    color: $heading-font-color;
+}
+
+.container {                            // opciono: stilizovanje wrapera
+    margin: 0 auto;
+    width: 95%;
+    max-width: 100rem;
+}
+
+img{                                    // fluidnost slika
+    max-width: 100%;
+}
+
+a {                                     // opciono: uklanjanje underlinea kod linkova
+    text-decoration: none;
+}
+
+/*section, footer {                     // opciono: layout helper
+    outline: 1px solid red;
+}*/
+
+.container {
+    outline: 1px solid $danger;         // opciono: layout helper
+}

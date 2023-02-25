@@ -1,0 +1,12 @@
+
+$header-background-color: $purple;
+$header-font-color: $white;
+
+header {
+    @include padding;
+    background-color: $header-background-color;
+}
+
+header a {
+    color: $header-font-color;
+}

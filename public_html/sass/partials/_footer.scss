@@ -1,0 +1,12 @@
+
+
+$footer-background-color: $purple;
+$footer-font-color: $white;
+
+footer {
+    @include padding;
+    background-color: $footer-background-color;
+}
+footer a, footer p {
+    color:$footer-font-color;
+}

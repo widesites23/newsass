@@ -1,0 +1,8 @@
+
+$about-background-color: $purple;
+$about-font-color: $white;
+
+.about-section {
+    @include padding;
+    background-color: $about-font-color;
+}
