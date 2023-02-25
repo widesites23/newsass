@@ -1,12 +1,77 @@
 
 $header-background-color: $purple;
 $header-font-color: $white;
+$nav-font: $josefin;
+$hover-font-color: $success-zelena;
 
 header {
     @include padding;
     background-color: $header-background-color;
+
+    .branding {
+        text-align: center;
+
+        a {
+            color: $header-font-color;
+        }
+    }
+    nav {
+        font-family: $nav-font;
+        ul {
+            list-style: none;
+            padding-left: 0;
+
+            a {
+                display: block;
+                padding: 10px 0;
+                text-align: center;
+                color: $header-font-color;
+                text-transform: uppercase;
+                font-weight: $font-bold;
+                font-size: 1.75rem;
+
+                &:hover, &.active {
+                    color: $hover-font-color;
+                }
+            }
+        }
+    }
 }
 
-header a {
-    color: $header-font-color;
+@media (min-width: 992px) {
+    header {
+        padding: 10px 0;
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            nav {
+                ul {
+                    display: flex;
+
+                    a {
+                        padding: 5px 8px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: 1200px) {
+    header .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        nav {
+            ul {
+                display: flex;
+
+                a {
+                    padding: 5px 16px;
+                }
+            }
+        }
+    }
 }

@@ -1,11 +1,13 @@
 
 // generalno podesavanje css stilova za base.scss
 
-$default-font-color: $black; 
+
 $default-background-color: $light-gray;
 
 $default-font: $rubik;
+$default-font-color: $black; 
 $default-font-weight: $font-regular;
+ 
 $heading-font: $josefin;
 $heading-font-color: $purple;
 $heading-font-weight: $font-bold;
@@ -51,8 +53,9 @@ a {                                     // opciono: uklanjanje underlinea kod li
 
 /*section, footer {                     // opciono: layout helper
     outline: 1px solid red;
-}*/
+}
 
 .container {
     outline: 1px solid $danger;         // opciono: layout helper
 }
+*/
