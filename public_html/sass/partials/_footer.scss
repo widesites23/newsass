@@ -2,11 +2,55 @@
 
 $footer-background-color: $purple;
 $footer-font-color: $white;
+$footer-nav-font: $josefin;
+$footer-text-font: $lato;
 
 footer {
     @include padding;
     background-color: $footer-background-color;
+
+    ul {
+        list-style: none;
+        padding-left: 0;
+
+
+        li {
+            text-align: center;
+            a {
+                display: block;
+                padding: 10px 0;
+                text-align: center;
+                color: $footer-font-color;
+                font-family: $footer-nav-font;
+                text-transform: uppercase;
+                font-weight: $font-regular;
+                font-size: 1.65rem;
+
+                &:hover {
+                    color: $hover-font-color;
+                }
+
+            }
+
+        }
+    }
+    p {
+        color: $footer-font-color;
+        text-align: center;
+        font-family: $footer-text-font;
+        font-size: 1.25rem;
+        opacity: 0.5;
+    }
+
 }
-footer a, footer p {
-    color:$footer-font-color;
-}
+@media (min-width: 768px) {
+    ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        li {
+            padding: 0 10px;
+        }
+        }
+    }
